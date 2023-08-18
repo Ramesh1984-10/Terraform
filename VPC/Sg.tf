@@ -26,7 +26,7 @@ resource "aws_security_group" "ssh-security-group" {
   }
 
    tags = {
-    Name = "Baiston SG"
+    Name = var.Baiston_SG_Name
   }
 }
 
@@ -59,7 +59,7 @@ resource "aws_security_group" "private-security-group" {
     cidr_blocks = [var.public_rt_cidr]
   }
   tags = {
-    Name = "Private Security Group"
+    Name =  var.Private_SG_Name
   }
 }
 
@@ -82,6 +82,7 @@ resource "aws_security_group" "Alb-security-group" {
     cidr_blocks = [var.public_rt_cidr]
   }
   tags = {
-    Name = "Alb Security Group"
+    Name = var.ALB_SG_Name
   }
 }
+

@@ -66,3 +66,27 @@ variable "public_subnet_config" {
 variable "private_subnet_config" {
   description = "Configuration for public subnets"
 }
+
+
+
+variable "Baiston_SG_Name" {
+  description = "Name of Bastion security Group"
+     
+}
+
+
+variable "Private_SG_Name" {
+  description = "Name of Private security Group"
+  
+}
+
+variable "ALB_SG_Name" {
+  description = "Name of ALB security Group"
+  
+}
+
+
+variable "ENV_Name" {
+  description = "Name of the Environmet"
+  
+}
